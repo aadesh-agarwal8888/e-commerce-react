@@ -14,6 +14,7 @@ const CartIcon = ({toggleCartDropdown}) => (
 
 const mapDispatchToProps = dispatch => ({
     toggleCartDropdown: () => dispatch(toggleCartDropdown())
-})
+});
+
 
 export default connect(null, mapDispatchToProps)(CartIcon);
