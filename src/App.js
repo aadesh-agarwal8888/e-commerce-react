@@ -32,7 +32,6 @@ componentDidMount() {
 
     } else {
       setCurrentUser(userAuth)
-      console.log(this.state);
     }
 
   })
