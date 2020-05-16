@@ -10,6 +10,7 @@ import {auth, createUserProfileDocument} from './components/firebase/firebase.ut
 import {connect} from 'react-redux';
 import {setCurrentUser} from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
+//import { selectCollectionsForPreview } from './redux/shop/shop.selector';
 import {createStructuredSelector} from 'reselect';
 import CheckoutPage from './pages/checkout/checkout.component';
 
@@ -29,6 +30,7 @@ componentDidMount() {
             ...snapShot.data()
         });
       });
+      //addCollectionAndDocuments('collections', collectionsArray.map( ({title, items}) => ({title, items}) ))
 
     } else {
       setCurrentUser(userAuth)
